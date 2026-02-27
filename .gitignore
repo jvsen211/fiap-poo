@@ -1,0 +1,11 @@
+# Ignorar arquivos do Eclipse
+/.metadata/
+/bin/
+/target/
+/.settings/
+*.log
+*.class
+
+# Ignorar arquivos temporários do sistema
+*.tmp
+*.swp
