@@ -2,25 +2,37 @@ package br.com.fiapride.model;
 
 public class Baqueta {
 
-    public String cor;
-    public String material;
-    public int numeracao;
+    private String cor;
+    private String material;
+    private int numeracao;
 
-    // Método para trocar a cor
-    public void trocarCor(String novaCor) {
-        if (novaCor != null && !novaCor.isEmpty()) {
-            cor = novaCor;
-        } else {
-            System.out.println("Cor inválida!");
-        }
+    public String getCor() {
+        return cor;
     }
 
-    // Método para aumentar a numeração
-    public void aumentarNumeracao(int incremento) {
-        if (incremento > 0) {
-            numeracao += incremento;
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public int getNumeracao() {
+        return numeracao;
+    }
+
+    public void setNumeracao(int numeracao) {
+
+        if (numeracao >= 0) {
+            this.numeracao = numeracao;
         } else {
-            System.out.println("Incremento inválido!");
+            System.out.println("Erro: numeração não pode ser negativa.");
         }
+
     }
 }

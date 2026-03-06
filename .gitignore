@@ -5,7 +5,5 @@
 /.settings/
 *.log
 *.class
-
-# Ignorar arquivos temporários do sistema
 *.tmp
 *.swp
