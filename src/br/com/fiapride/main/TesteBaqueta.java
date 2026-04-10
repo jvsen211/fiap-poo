@@ -1,12 +1,12 @@
-package br.com.fiapride.main;
+package src.br.com.fiapride.main;
 
-import br.com.fiapride.model.Baqueta;
+import src.br.com.fiapride.model.Componentes;
 
 public class TesteBaqueta {
 
     public static void main(String[] args) {
 
-        Baqueta b1 = new Baqueta();
+        Componentes b1 = new Componentes();
 
         b1.setCor("Preta");
         b1.setMaterial("Madeira");
@@ -19,5 +19,6 @@ public class TesteBaqueta {
         System.out.println("Cor: " + b1.getCor());
         System.out.println("Material: " + b1.getMaterial());
         System.out.println("Numeração: " + b1.getNumeracao());
+
     }
 }

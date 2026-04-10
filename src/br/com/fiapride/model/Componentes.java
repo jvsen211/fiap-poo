@@ -1,10 +1,14 @@
-package br.com.fiapride.model;
+package src.br.com.fiapride.model;
 
-public class Baqueta {
+public class Componentes {
 
     private String cor;
     private String material;
     private int numeracao;
+    private String mateiraldospratos;
+    private String marca;
+    private int numerodeBUmbos;
+
 
     public String getCor() {
         return cor;
